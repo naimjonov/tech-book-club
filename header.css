@@ -1,0 +1,124 @@
+/*-----------------HEADER------------------*/
+header {
+  background: #FAF5F3 url("assets/images/pattern-light-bg.svg");
+  
+  /* positioning and overflow control for glow */
+  position: relative;
+  overflow: hidden;
+
+  /*padding space*/
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 80px;
+
+  @media (width >= 600px) {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (width >= 1000px) {
+    padding-top: 32px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+.hero-title {
+  margin-top: 48px;
+  width: 100%;
+  font-size: 38px;
+
+  @media (width >= 600px) {
+    width: 90%;
+    font-size: 62px;
+  }
+
+  @media (width >= 1000px) {
+    width: 100%;
+  }
+}
+
+.hero-image {
+  position: relative;
+  @media (width >= 1000px) {
+    max-width: 540px;
+  }
+}
+
+.bookclub-logo {
+  width: 192px;
+
+  @media (width >= 1000px) {
+    width: 189px;
+  }
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+}
+
+.glow {
+  position: absolute;
+  width: 684px;
+  height: 684px;
+
+  left: 426px;
+  top: 783px;
+
+  @media (width >= 600px) {
+    left: 426px;
+    top: 1173px;
+  }
+
+  @media (width >= 1000px) {
+    left: 1000px;
+    top: 300px;
+  }
+}
+
+.header-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (width >= 600px) {
+    max-width: 570px;
+  }
+}
+
+.join-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avatars {
+  width: 110px;
+  height: 40px;
+}
+
+.developers-joined {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.star {
+  margin: 0;
+  width: 24px;
+}
+
+.stars {
+  display: flex;
+}
+
+.developer-rating {
+  display: flex;
+  flex-direction: column;
+}

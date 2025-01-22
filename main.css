@@ -1,0 +1,310 @@
+/* MAIN CONTENT */
+main {
+  /* Margins account for the 64px space not added by the gaps */
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  /* padding for main content areas */
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (width >= 600px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 80px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* ----------- READ TOGETHER SECTION --------------*/
+.read-together-flex {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+
+  @media (width >= 1454px) {
+    gap: 80px;
+  }
+}
+
+.read-together-content, .not-average-content {
+  @media (width >= 1000px) {
+    max-width: 530px;
+  }
+}
+
+.read-together-title, .not-average-title {
+  @media (width >= 600px) {
+    width: 80%;
+  }
+
+  @media (width >= 1000px) {
+    width: 100%;
+  }
+}
+
+/* ul general styling */
+.ul-li-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li::before {
+  content: url("assets/images/icon-check.svg");
+  height: 28px;
+  width: 28px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.main-content-image {
+  border-radius: 20px;
+  @media (width >= 1000px) {
+    max-width: 560px;
+  }
+}
+/* -----------------------------------------------*/
+
+/* ----------- NOT AVERAGE SECTION --------------*/
+.not-average-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+
+  @media (width >= 1000px) {
+    gap: 80px;
+  }
+}
+
+/* ----------- READING JOURNEY SECTION --------------*/
+.reading-journey-center {
+  display: flex; 
+  justify-content: center;
+  display: none;
+
+  @media screen and (width >= 1000px) {
+    display: flex;
+  }
+}
+
+.reading-journey-container {
+  background: #FAF5F3 url("assets/images/pattern-light-bg.svg");
+
+  max-width: 1170px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 12px; 
+
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (width >= 1000px) {
+    display: block;
+  }
+}
+
+.reading-journey-glow {
+  left: 798px;
+  top: 160px;
+}
+
+.reading-journey-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.reading-journey-flex > .glow {
+  left: 910px;
+  top: 120px;
+}
+
+.journey-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  justify-content: center;
+
+  @media (width >= 1000px) {
+    gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.journey-steps-flex > div {
+  width: 40%;
+}
+
+.reading-journey-title {
+  width: 60%;
+  text-align: center;
+  margin: 0;
+
+  @media (width >= 600px) {
+    width: 100%;
+  }
+
+  @media (width >= 1000px) {
+    width: 60%;
+  }
+}
+
+.journey-step-number {
+  width: 34px;
+  height: 26px;
+  border: 2px solid black;
+  border-radius: 2px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  
+  font-family: "MartianMono-Regular";
+  font-size: 20px;
+  letter-spacing: -1px;
+  text-align: center;
+
+  @media (width >= 600px) {
+    font-size: 22px;
+    width: 36px;
+    height: 28px;
+  }
+
+  @media (width >= 1000px) {
+    font-size: 24px;
+    width: 38px;
+    height: 30px;
+  }
+}
+
+.journey-step-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (width >= 600px) {
+    max-width: 226px;
+  }
+}
+
+.next-step-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 77px;
+}
+/* -----------------------------------------------*/
+
+/* ----------- MEMBERSHIP OPTIONS SECTION --------------*/
+.membership-options-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.membership-cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+
+  @media (width >= 1000px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 290px;
+
+  padding: 24px;
+  width: 100%;
+  border: 1px solid #E6E1DF; 
+  border-radius: 8px;
+
+  position: relative;
+  overflow: hidden;
+
+  @media (width >= 1000px) {
+    max-width: 238px;
+    max-height: 308px;
+  }
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+  border-style: none;
+  border: 1px solid #E6E1DF;
+}
+
+.membership-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pro-card {
+  background-color: #FFF5EF;
+  
+  @media (width >= 1000px) {
+    max-width: 302px;
+    max-height: 308px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.pro-card-glow {
+  left: 24px;
+  top: 102px;
+}
+/* -----------------------------------------------------*/
+
+/* ----------- QUOTE SECTION --------------*/
+.book-club-quote-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.book-club-quote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (width >= 1000px) {
+    text-align: center;
+    align-items: center;
+    max-width: 970px;
+  }
+}
+/* -----------------------------------------------------*/

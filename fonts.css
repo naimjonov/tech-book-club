@@ -1,0 +1,86 @@
+
+/*-----------------FONT FACES----------------------*/
+/** MartianMono **/
+@font-face {
+  font-family: "MartianMono-Bold";
+  src: url("assets/fonts/martian-mono/static/MartianMono-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MartianMono-Semibold";
+  src: url("assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "MartianMono-Regular";
+  src: url("assets/fonts/martian-mono/static/MartianMono-Regular.ttf");
+  font-weight: normal;
+}
+
+/** Inter **/
+@font-face {
+  font-family: "Inter-Semibold";
+  src: url("assets/fonts/inter/static/Inter_18pt-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/inter/static/Inter_18pt-Regular.ttf");
+  font-weight: normal;
+}
+
+/* text presets */
+.text-preset-3 {
+  font-family: "MartianMono-Semibold";
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: #062630;
+}
+
+.text-preset-4 {
+  font-family: "MartianMono-Semibold";
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+.text-preset-5 {
+  font-family: "Inter-Semibold";
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+.text-preset-6 {
+  font-family: "MartianMono-Semibold";
+  line-height: 130%;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
+
+.text-preset-7 {
+  font-family: "MartianMono-Regular";
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #385159;
+}
+
+.journey-font {
+  font-family: "MartianMono-Semibold";
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: -1px;
+
+  @media (width >= 768px) {
+    font-size: 16px;
+  }
+
+  @media (width >= 1454px) {
+    font-size: 18px;
+  }
+}
