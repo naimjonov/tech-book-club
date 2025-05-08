@@ -1,16 +1,20 @@
-/*-----------------GENERAL STYLES------------------*/
 body {
   font-family: helvetica;
   margin: 0;
   color: #385159;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
-p, ul {
-  /* TEXT PRESET 5 */
+p,
+ul {
+
   font-family: "Inter-Regular";
   font-size: 20px;
   line-height: 140%;
@@ -19,7 +23,6 @@ p, ul {
 }
 
 h1 {
-  /* LINEAR GRADIENT STYLING FOR H1 TAG IN HEADER */
   background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -32,7 +35,6 @@ h1 {
 }
 
 h2 {
-  /* text preset 2 for mobile */
   font-family: "MartianMono-Semibold";
   line-height: 130%;
   letter-spacing: -2px;
@@ -40,7 +42,7 @@ h2 {
   margin-bottom: 24px;
   color: #062630;
 
-  @media (width >= 768px) {
+  @media (width >=768px) {
     font-size: 50px;
   }
 }
@@ -67,42 +69,32 @@ img {
   border-radius: 8px;
 }
 
-/* ----------- HOVER STYLES --------------*/
 button:hover {
   background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
 }
 
 .footer-button:hover {
-  background: linear-gradient(90deg, #385159 0%, #062630 100%); 
+  background: linear-gradient(90deg, #385159 0%, #062630 100%);
 }
-/* -----------------------------------------------------*/
 
-/* ----------- FOCUS STYLES --------------*/
-/* THESE ARE GENERAL BUTTON STYLES */
 button {
-  /* flex properties */
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
   background-color: #FFF5EF;
-
-  /* padding properties */
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 22px;
-  padding-right: 22px; 
+  padding-right: 22px;
   width: 100%;
-
-  /* aesthetics */
   border: 2px solid #062630;
   color: #062630;
   border-radius: 8px;
   text-transform: uppercase;
-
   position: relative;
 
-  @media (width >= 768px) {
+  @media (width >=768px) {
     max-width: 380px;
   }
 }
@@ -111,7 +103,6 @@ button {
   height: 24px;
   width: 24px;
 }
-/**********************************/
 
 button:focus {
   box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 5px #385159;

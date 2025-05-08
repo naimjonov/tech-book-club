@@ -1,17 +1,13 @@
-/*-----------------HEADER------------------*/
+
 header {
   background: #FAF5F3 url("assets/images/pattern-light-bg.svg");
   
-  /* positioning and overflow control for glow */
   position: relative;
   overflow: hidden;
-
-  /*padding space*/
   padding-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 80px;
-
   @media (width >= 600px) {
     padding-top: 32px;
     padding-left: 32px;
